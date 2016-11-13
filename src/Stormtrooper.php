@@ -23,14 +23,6 @@ class Stormtrooper
     }
 
     /*
-     * @return string
-     */
-    public function getName():string
-    {
-        return $this->name;
-    }
-
-    /*
     * @param array $collection, list of Stormtroopers
     * @param string $salut, salutation message
     * @throws Exception if $collection is empty
@@ -46,7 +38,9 @@ class Stormtrooper
         $hello = "";
 
         foreach ($collection as  $spermySoldierGuy) {
-            $hello .= '['.$this->name. '] : '. $salut.$spermySoldierGuy->name.PHP_EOL;
+            if($this->name !== $spermySoldierGuy->name) {
+                $hello .= '['.$this->name. '] : '. $salut.$spermySoldierGuy->name.PHP_EOL;   
+            }
         }
 
         return $hello;
