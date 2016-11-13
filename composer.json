@@ -1,0 +1,13 @@
+{
+    "name": "adrienzaganelli/composer",
+    "authors": [{
+        "name": "Adrien Zaganelli",
+        "email": "adrienzaganelli@gmail.com"
+    }],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Empire\\": "src/"
+        }
+    }
+}
