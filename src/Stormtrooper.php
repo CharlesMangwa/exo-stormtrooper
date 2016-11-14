@@ -15,6 +15,9 @@ class Stormtrooper
      */
     public function __construct(string $name)
     {
+        if (empty($name)) {
+            throw new \Exception('Empty squad my lord ! Oh ! no please ! AAAaaaarh...');
+        }
         //define name and add him to the squad
         $this->name = $name;
         $this::$squad[] = $this;
