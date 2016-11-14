@@ -15,5 +15,5 @@ $collection =
 
 $salutations = 'Hello, ';
 foreach ($collection as $soldier) {
-    echo $soldier->Salute($soldier::$squad, $salutations);
+    echo $soldier->Salute($soldier::$squad, $salutations).PHP_EOL;
 }
