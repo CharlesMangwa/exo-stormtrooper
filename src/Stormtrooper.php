@@ -37,6 +37,9 @@ class Stormtrooper
         if (count($collection) === 0) {
             throw new \Exception('Empty squad my lord ! Oh ! no please ! AAAaaaarh...');
         }
+        if (empty($salut)) {
+            throw new \Exception('Empty squad my lord ! Oh ! no please ! AAAaaaarh...');
+        }
 
         $hello = "";
 
